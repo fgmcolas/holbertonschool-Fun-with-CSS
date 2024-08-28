@@ -1,0 +1,123 @@
+.menu-open  {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    background-color: #dc0025;
+    border: solid #BD0625 1.5px;
+    border-radius: 50%;
+    outline: none;
+    transition: .1s;
+}
+
+.menu .menu-open + .menu-open-button .menu-line-1,
+.menu .menu-open + .menu-open-button .menu-line-2,
+.menu .menu-open + .menu-open-button .menu-line-3 {
+    position: absolute;
+    left: 29px;
+    width: 17px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: .1s;
+}
+
+.menu .menu-open + .menu-open-button .menu-line-1{
+    top: 30px;
+}
+
+.menu .menu-open + .menu-open-button .menu-line-2 {
+    top: 35px;
+}
+
+.menu .menu-open + .menu-open-button .menu-line-3{
+    top: 41px;
+}
+
+.menu-item {
+    display: none;
+}
+
+.menu-open:hover {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    background-color: #dc0025;
+    border-radius: 50%;
+    outline: none;
+}
+.menu .menu-open:hover + .menu-open-button .menu-line-1,
+.menu .menu-open:hover + .menu-open-button .menu-line-2,
+.menu .menu-open:hover + .menu-open-button .menu-line-3 {
+    position: absolute;
+    left: 32px;
+    width: 17px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.menu .menu-open:hover + .menu-open-button .menu-line-1 {
+    top: 32px;
+}
+
+.menu .menu-open:hover + .menu-open-button .menu-line-2 {
+    top: 38px;
+}
+
+.menu .menu-open:hover + .menu-open-button .menu-line-3{
+    top: 44px;
+}
+
+.menu-open:checked {
+    width: 41px;
+    height: 41px;
+    border: solid #BD0625 1.5px;
+    transition: .1s;
+}
+
+.menu .menu-open:checked + .menu-open-button .menu-line-1,
+.menu .menu-open:checked + .menu-open-button .menu-line-3 {
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 5px;
+    transform: rotate(45deg);
+    transition: 0.1s;
+}
+
+.menu .menu-open:checked + .menu-open-button .menu-line-2{
+    display: none;
+}
+
+.menu .menu-open:checked + .menu-open-button .menu-line-3{
+    transform: rotate(-45deg);
+}
+
+.menu-open:checked ~ .menu-item {
+    display: block;
+    margin: 8px 5px;
+    color: #fff;
+    width: 38.5px;
+    height: 38.5px;
+    background-color: #dc0025;
+    border: solid #BD0625 1.5px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.menu-open:checked ~ .menu-item i {
+    transform: translateY(60%);
+}
+
+.menu-open:checked ~ .menu-item:hover {
+    background-color: #fff;
+    color: #dc0025;
+    border: solid #BD0625 1.5px;
+}

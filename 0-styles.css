@@ -1,0 +1,38 @@
+ul li {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    width: 320px;
+    height: 460px;
+    padding: 20px 5px 20px;
+    margin: 20px;
+    font-size: 42px;
+    font-weight: bold;
+    background-color: #f7f7f7;
+    border: solid #b1b1b1 2px;
+    border-radius: 1rem;
+}
+
+.i-html {
+    background: url(images/d416199ca6ecdbd0f8a3.png)0;
+    width: 280px;
+    height: 410px;
+    display: block;
+    margin: 20px auto;
+}
+
+.i-css {
+    background: url(images/d416199ca6ecdbd0f8a3.png) -290px;
+    width: 280px;
+    height: 410px;
+    display: block;
+    margin: 20px auto;
+}
+
+.i-js {
+    background: url(images/d416199ca6ecdbd0f8a3.png) -580px;
+    width: 280px;
+    height: 410px;
+    display: block;
+    margin: 20px auto;
+}
